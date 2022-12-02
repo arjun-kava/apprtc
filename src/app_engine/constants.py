@@ -25,14 +25,17 @@ LOOPBACK_CLIENT_ID = 'LOOPBACK_CLIENT_ID'
 ICE_SERVER_OVERRIDE  = [
   {
     "urls": [
-      "turn:openrelay.metered.ca:443?transport=tcp"
+      "turn:openrelay.metered.ca:443?transport=udp",
+      "turn:openrelay.metered.ca:443?transport=tcp",
+      "turn:openrelay.metered.ca:80",
+      "turn:openrelay.metered.ca:443"
     ],
     "username": "openrelayproject",
     "credential": "openrelayproject"
   },
   {
     "urls": [
-      "stun.l.google.com:19302"
+      "stun:openrelay.metered.ca:80"
     ]
   }
 ]
